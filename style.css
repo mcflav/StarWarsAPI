@@ -1,0 +1,27 @@
+body{
+background-image: url("https://i.imgur.com/pg3apop.jpg");
+}
+
+h1{
+    text-align: center;
+    color:red;
+    font-size: 50px;
+    text-shadow: -6px 4px 5px yellow;
+    
+}
+
+h2{
+    text-align: center;
+    color:white;
+    font-size: 40px;
+    text-shadow: 2px 2px 5px gold;
+    
+}
+
+.container{
+  padding-bottom: 5px;
+}
+
+p{
+    font-size: 18px;
+}
