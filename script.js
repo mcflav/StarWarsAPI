@@ -19,6 +19,7 @@ fetch(url)
   .then((response) => response.json())
   .then(function(data){
     let characters = data.results;
+  console.log("url: " + url + " data: " + characters);
     return characters.map(function(character){
         select.options[select.options.length] = new Option(`${character.name}`);
     });
