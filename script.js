@@ -4,16 +4,7 @@ var gender = document.getElementById("gender");
 var home = document.getElementById("home");
 var species = document.getElementById("species");
 
-const url1 = 'https://swapi.dev/api/people/1';
-const url2 = 'https://swapi.dev/api/people/2';
-const url3 = 'https://swapi.dev/api/people/3';
-const url4 = 'https://swapi.dev/api/people/4';
-const url5 = 'https://swapi.dev/api/people/5';
-const url6 = 'https://swapi.dev/api/people/6';
-const url7 = 'https://swapi.dev/api/people/7';
-const url8 = 'https://swapi.dev/api/people/8';
-const url9 = 'https://swapi.dev/api/people/9';
-const url10 = 'https://swapi.dev/api/people/10';
+
 
 fetch(url)
   .then((response) => response.json())
