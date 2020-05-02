@@ -5,7 +5,7 @@ var home = document.getElementById("home");
 var species = document.getElementById("species");
 const url = 'https://swapi.dev/api/people/';
 const url1 = 'https://swapi.dev/api/people/1';
-var url2 = 'https://swapi.dev/api/people/2';
+const url2 = 'https://swapi.dev./api/people/2';
 const url3 = 'https://swapi.dev/api/people/3';
 const url4 = 'https://swapi.dev/api/people/4';
 const url5 = 'https://swapi.dev/api/people/5';
@@ -61,10 +61,10 @@ fetch(url)
         }
         
     }else if(strCharacter === 'C-3PO'){
+      console.log(url + "2");
         async function getStarwarsName(){
-        const resp = await fetch(url + "2");
-          console.log(url + "2");
-        const data = await resp.json();
+        const resp = await fetch(url2);
+         const data = await resp.json();
         gender.innerHTML = data.gender;
         charPic.src = "C-3P0.JPG";
         var planet = data.homeworld;
