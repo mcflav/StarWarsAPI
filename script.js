@@ -63,6 +63,7 @@ fetch(url)
     }else if(strCharacter === 'C-3PO'){
         async function getStarwarsName(){
         const resp = await fetch(url + "2");
+          console.log(url + "2");
         const data = await resp.json();
         gender.innerHTML = data.gender;
         charPic.src = "C-3P0.JPG";
