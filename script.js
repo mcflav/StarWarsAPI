@@ -4,25 +4,24 @@ var gender = document.getElementById("gender");
 var home = document.getElementById("home");
 var species = document.getElementById("species");
 const url = 'https://swapi.dev/api/people/';
-const url1 = 'https://swapi.dev/api/people/1';
+const url1 = 'https://swapi.dev/api/people/1/';
 const url2 = 'https://swapi.dev./api/people/2/';
-const url3 = 'https://swapi.dev/api/people/3';
-const url4 = 'https://swapi.dev/api/people/4';
-const url5 = 'https://swapi.dev/api/people/5';
-const url6 = 'https://swapi.dev/api/people/6';
-const url7 = 'https://swapi.dev/api/people/7';
-const url8 = 'https://swapi.dev/api/people/8';
-const url9 = 'https://swapi.dev/api/people/9';
-const url10 = 'https://swapi.dev/api/people/10';
+const url3 = 'https://swapi.dev/api/people/3/';
+const url4 = 'https://swapi.dev/api/people/4/';
+const url5 = 'https://swapi.dev/api/people/5/';
+const url6 = 'https://swapi.dev/api/people/6/';
+const url7 = 'https://swapi.dev/api/people/7/';
+const url8 = 'https://swapi.dev/api/people/8/';
+const url9 = 'https://swapi.dev/api/people/9/';
+const url10 = 'https://swapi.dev/api/people/10/';
 
 
 fetch(url)
   .then((response) => response.json())
   .then(function(data){
     let characters = data.results;
-  console.log("url: " + url + " data: " + characters);
     return characters.map(function(character){
-        select.options[select.options.length] = new Option(`${character.name}`);
+    select.options[select.options.length] = new Option(`${character.name}`);
     });
   })
   .catch(function(error) {
@@ -61,7 +60,6 @@ fetch(url)
         }
         
     }else if(strCharacter === 'C-3PO'){
-      console.log(url + "2");
         async function getStarwarsName(){
         const resp = await fetch(url2);
          const data = await resp.json();
@@ -92,7 +90,6 @@ fetch(url)
         async function getSpecies(speciesType){
         const resp = await fetch(speciesType);
         const data = await resp.json();
-        console.log(data.name);
         species.innerHTML = data.name;
         }
     }else if(strCharacter === 'R2-D2'){
