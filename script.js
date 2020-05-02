@@ -62,7 +62,7 @@ fetch(url)
         
     }else if(strCharacter === 'C-3PO'){
         async function getStarwarsName(){
-        const resp = await fetch(url2);
+        const resp = await fetch('https://swapi.dev/api/people/2');
         const data = await resp.json();
         gender.innerHTML = data.gender;
         charPic.src = "C-3P0.JPG";
