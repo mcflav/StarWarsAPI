@@ -3,7 +3,7 @@ const charPic = document.getElementById("pic");
 var gender = document.getElementById("gender");
 var home = document.getElementById("home");
 var species = document.getElementById("species");
-
+const url = 'https://swapi.dev/api/people/';
 
 
 fetch(url)
