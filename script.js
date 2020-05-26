@@ -18,7 +18,7 @@ const url10 = 'https://swapi.dev/api/people/10/';
 window.onload = StartMusic();
 
 
-StartMusic(){
+function StartMusic(){
   player.play();
 }
 
