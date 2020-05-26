@@ -3,7 +3,6 @@ const charPic = document.getElementById("pic");
 var gender = document.getElementById("gender");
 var home = document.getElementById("home");
 var species = document.getElementById("species");
-var player = document.getElementById("player");
 const url = 'https://swapi.dev/api/people/';
 const url1 = 'https://swapi.dev/api/people/1/';
 const url2 = 'https://swapi.dev./api/people/2/';
@@ -19,7 +18,8 @@ window.onload = StartMusic();
 
 
 function StartMusic(){
-  player.play();
+  var audio = new Audio('starWarsTheme.mp3');
+  audio.play();
 }
 
 fetch(url)
