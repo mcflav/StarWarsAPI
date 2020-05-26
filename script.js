@@ -3,6 +3,7 @@ const charPic = document.getElementById("pic");
 var gender = document.getElementById("gender");
 var home = document.getElementById("home");
 var species = document.getElementById("species");
+var player = document.getElementById("player");
 const url = 'https://swapi.dev/api/people/';
 const url1 = 'https://swapi.dev/api/people/1/';
 const url2 = 'https://swapi.dev./api/people/2/';
@@ -14,7 +15,12 @@ const url7 = 'https://swapi.dev/api/people/7/';
 const url8 = 'https://swapi.dev/api/people/8/';
 const url9 = 'https://swapi.dev/api/people/9/';
 const url10 = 'https://swapi.dev/api/people/10/';
+window.onload = StartMusic();
 
+
+StartMusic(){
+  player.play();
+}
 
 fetch(url)
   .then((response) => response.json())
